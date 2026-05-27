@@ -1,0 +1,139 @@
+{
+  "version": "1",
+  "contracts": [
+    {
+      "kind": "module",
+      "type": "ory.kratos",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.ProviderConfig"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_auth_provider_describe",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.AuthProviderDescribeConfig",
+      "input": "workflow.plugins.ory_kratos.v1.AuthProviderDescribeInput",
+      "output": "workflow.plugins.ory_kratos.v1.AuthProviderDescribeOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_create",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_get",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_list",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_update",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_delete",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_login_flow_create",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_login_flow_get",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_registration_flow_create",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_registration_flow_get",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_recovery_flow_create",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_recovery_flow_get",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_verification_flow_create",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_verification_flow_get",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_recovery_code",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    },
+    {
+      "kind": "step",
+      "type": "step.ory_kratos_identity_sessions_delete",
+      "mode": "strict",
+      "config": "workflow.plugins.ory_kratos.v1.OryKratosStepConfig",
+      "input": "workflow.plugins.ory_kratos.v1.OryKratosStepInput",
+      "output": "workflow.plugins.ory_kratos.v1.OryKratosStepOutput"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "name": "workflow-plugin-ory-kratos",
+  "version": "0.1.0",
+  "description": "Ory Kratos identity provider plugin",
+  "author": "GoCodeAlone",
+  "license": "MIT",
+  "type": "external",
+  "tier": "community",
+  "private": false,
+  "minEngineVersion": "0.64.0",
+  "keywords": ["ory", "kratos", "identity", "iam", "authentication", "passwordless"],
+  "homepage": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos",
+  "repository": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos",
+  "capabilities": {
+    "configProvider": false,
+    "moduleTypes": ["ory.kratos"],
+    "stepTypes": [
+      "step.ory_kratos_auth_provider_describe",
+      "step.ory_kratos_identity_create",
+      "step.ory_kratos_identity_get",
+      "step.ory_kratos_identity_list",
+      "step.ory_kratos_identity_update",
+      "step.ory_kratos_identity_delete",
+      "step.ory_kratos_login_flow_create",
+      "step.ory_kratos_login_flow_get",
+      "step.ory_kratos_registration_flow_create",
+      "step.ory_kratos_registration_flow_get",
+      "step.ory_kratos_recovery_flow_create",
+      "step.ory_kratos_recovery_flow_get",
+      "step.ory_kratos_verification_flow_create",
+      "step.ory_kratos_verification_flow_get",
+      "step.ory_kratos_identity_recovery_code",
+      "step.ory_kratos_identity_sessions_delete"
+    ],
+    "triggerTypes": []
+  },
+  "downloads": [
+    {
+      "os": "linux",
+      "arch": "amd64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos/releases/download/v0.1.0/workflow-plugin-ory-kratos-linux-amd64.tar.gz"
+    },
+    {
+      "os": "linux",
+      "arch": "arm64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos/releases/download/v0.1.0/workflow-plugin-ory-kratos-linux-arm64.tar.gz"
+    },
+    {
+      "os": "darwin",
+      "arch": "amd64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos/releases/download/v0.1.0/workflow-plugin-ory-kratos-darwin-amd64.tar.gz"
+    },
+    {
+      "os": "darwin",
+      "arch": "arm64",
+      "url": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos/releases/download/v0.1.0/workflow-plugin-ory-kratos-darwin-arm64.tar.gz"
+    }
+  ]
+}
