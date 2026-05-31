@@ -8,6 +8,26 @@
   "tier": "community",
   "private": false,
   "minEngineVersion": "0.64.0",
+  "required_secrets": [
+    {
+      "name": "ORY_KRATOS_ADMIN_URL",
+      "sensitive": false,
+      "description": "Ory Kratos Admin API base URL. Referenced as ${ORY_KRATOS_ADMIN_URL}. Keep this server-side only.",
+      "prompt": "Ory Kratos Admin API URL"
+    },
+    {
+      "name": "ORY_KRATOS_PUBLIC_URL",
+      "sensitive": false,
+      "description": "Ory Kratos Public API base URL for self-service browser flows. Referenced as ${ORY_KRATOS_PUBLIC_URL}.",
+      "prompt": "Ory Kratos Public API URL"
+    },
+    {
+      "name": "ORY_KRATOS_API_KEY",
+      "sensitive": true,
+      "description": "Bearer token for protected Ory Kratos Admin API deployments. Referenced as ${ORY_KRATOS_API_KEY}. Leave blank only for private self-hosted admin endpoints that do not use bearer auth.",
+      "prompt": "Ory Kratos Admin API bearer token"
+    }
+  ],
   "keywords": ["ory", "kratos", "identity", "iam", "authentication", "passwordless"],
   "homepage": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos",
   "repository": "https://github.com/GoCodeAlone/workflow-plugin-ory-kratos",
